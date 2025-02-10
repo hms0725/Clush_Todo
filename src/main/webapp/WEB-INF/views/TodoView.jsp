@@ -9,7 +9,6 @@
 <title>Todo(할일) List</title>
 <script type="text/javascript" src="../js/jquery.js"></script>
 </head>
-
 <style>
 * {
     margin: 0;
@@ -157,12 +156,12 @@ button.edit-btn:hover {
 		        if (todo && todo.latitude && todo.longitude) {
 		            const lat = todo.latitude;
 		            const lng = todo.longitude;
-		            showLocationOnMap(lat, lng);  // 지도에서 해당 위치를 표시하는 함수
+		            showLocationOnMap(lat, lng);// 지도에서 해당 위치를 표시하는 함수
 		        }
 		    });
 		});
 				
-		//할일 추가버튼 클릭시
+		//추가버튼 클릭시
 		document.getElementById("add-btn").addEventListener("click",function(){							
 			const task = document.getElementById("todo-input").value;//할일 컬럼은 input에 적힌 값과 같다
 			const latitude = document.getElementById("latitude").value;
@@ -190,11 +189,10 @@ button.edit-btn:hover {
 			
 			//새로 추가한 일정 화면에 표시하기
 			.then(data => {
-				console.log("Response received:", data);//값 잘나옴		
+				console.log("Response received:", data);		
 				if(data.success){ //할일이 성공적으로 추가되었을 때 화면에 반영
 					const todo = data.todo;
-					console.log("Todo object:", todo);	//값 잘나옴	
-					
+					console.log("Todo object:", todo);					
 					const todoList = document.getElementById("todo-list");
 					console.log("todoList object:", todoList);
 					
@@ -248,7 +246,7 @@ button.edit-btn:hover {
 					//주소 표시용 span생성
 	                const addressText = document.createElement("span");
 	                addressText.classList.add("address-text");
-	                addressText.textContent = "주소: " + todo.address; // 주소 텍스트를 표시
+	                addressText.textContent = "주소: " + todo.address;
 	                console.log(addressText);					
 					
 					// 수정 버튼
@@ -355,11 +353,11 @@ button.edit-btn:hover {
 			        buttonGroup.appendChild(mapButton);
 
 					// 버튼들을 li에 추가
+					li.appendChild(checkbox);
 					li.appendChild(todoText);
 					li.appendChild(form); // form을 li에 추가
 					li.appendChild(buttonGroup); // 버튼 그룹 div 추가
-					li.appendChild(checkbox);
-					
+									
 					// 리스트에 추가
 					todoList.appendChild(li);
 	
