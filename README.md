@@ -1,8 +1,10 @@
-![플젝](https://github.com/hms0725/Clush_Todo/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.png)  Clush_ToDo_List
+ Clush_ToDo_List
 ---
 Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, 구글 지도 API를 활용하여 "위치기반 ToDo List" 애플리케이션을 구현하였습니다.
 
-## 프로젝트 소개
+
+ ##  ![플젝](https://github.com/hms0725/Clush_Todo/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.png) 프로젝트 소개
+
 
 "**위치기반 Clush_ToDo_List**"는 사용자가 할 일들을 구글 지도에서 주소와 함께 저장해 해당 일정을 어디서 진행할 수 있는지 확인 및 관리할 수 있는 애플리케이션입니다. 
 
@@ -57,7 +59,9 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, 구글 지
 >->완료한 할 일은 체크박스를 클릭 해 완료여부로 바꾸고 가로줄이 쳐저 직관적으로 관리가 가능
 
 >### 라이브러리
-> 
+> + ReactJs 주력 컴포넌트
+>
+> + JSTL
 
 
 
