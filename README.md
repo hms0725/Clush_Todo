@@ -59,7 +59,9 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, 구글 지
 >->완료한 할 일은 체크박스를 클릭 해 완료여부로 바꾸고 가로줄이 쳐저 직관적으로 관리가 가능
 
 >### 라이브러리
-> + ReactJs 주력 컴포넌트
+> + 프론트엔드 주력 라이브러리
+>   + JavaScript - React.js  
+>
 >
 > + 백엔드 주력 라이브러리
 >   + JSP tag Library - JSTL
