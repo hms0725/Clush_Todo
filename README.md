@@ -1,12 +1,12 @@
  Clush_ToDo_List
 ---
-Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 지도 API**를 활용하여 "위치기반 ToDo List" 애플리케이션을 구현하였습니다.
+Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 지도 API**를 활용하여 "위치기반 ToDo List" 애플리케이션을 구현하였다.
 
 
  ##  ![플젝](https://github.com/hms0725/Clush_Todo/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.png) 프로젝트 소개
 
 
-"**위치기반 Clush_ToDo_List**"는 사용자가 할 일들을 구글 지도에서 주소와 함께 저장해 해당 일정을 어디서 진행할 수 있는지 확인 및 관리할 수 있는 애플리케이션입니다. 
+"**위치기반 Clush_ToDo_List**"는 사용자가 할 일들을 구글 지도에서 주소와 함께 저장해 해당 일정을 어디서 진행할 수 있는지 확인 및 관리할 수 있는 애플리케이션. 
 
 >### 개발 기간
 >+ 2025.02.08 ~ 2025.02.11
@@ -15,7 +15,7 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 >### 기술 스택
 >+ Java, Spring boot v3, mysql 등
 >  
->본 프로젝트는 Spring boot 3.2.3와 MySql 기반으로 작성이 되었습니다. REST API를 기반 백엔드 서비스를 제공하기 위해 Spring Web과 톰캣 기반에서 구현되었습니다. 
+>본 프로젝트는 Spring boot 3.2.3와 MySql 기반으로 작성이 되었습니다. REST API를 기반 백엔드 서비스를 제공하기 위해 Spring Web과 톰캣 기반에서 구현되었다. 
 
 
 >### 주요 기능
