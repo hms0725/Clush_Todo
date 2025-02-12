@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.example.Clush.model.Todo;
 import com.example.Clush.service.TodoService;
@@ -115,4 +117,17 @@ public class TodoController {
 		}	
 	}
 	
+	// 404 오류 처리
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @RequestMapping("/404")
+    public String handle404() {
+        return "error";  // 404 오류 페이지
+    }
+
+    // 500 오류 처리
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @RequestMapping("/500")
+    public String handle500() {
+        return "error";  // 500 오류 페이지
+    }
 }
