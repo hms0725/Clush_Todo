@@ -1,6 +1,6 @@
  Clush_ToDo_List
 ---
-Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, 구글 지도 API를 활용하여 "위치기반 ToDo List" 애플리케이션을 구현하였습니다.
+Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 지도 API**를 활용하여 "위치기반 ToDo List" 애플리케이션을 구현하였습니다.
 
 
  ##  ![플젝](https://github.com/hms0725/Clush_Todo/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.png) 프로젝트 소개
