@@ -61,7 +61,12 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, 구글 지
 >### 라이브러리
 > + ReactJs 주력 컴포넌트
 >
-> + JSTL
+> + 백엔드 주력 라이브러리
+>   + JSP tag Library - JSTL
+>
+>
+>
+>   + Java Library - Sl4fj
 
 
 
