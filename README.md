@@ -116,15 +116,13 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 
 
 >### 테스트케이스
->
+> ![](https://github.com/hms0725/Clush_Todo/blob/master/TestCaseScreen.png)
 
 
 
 
 
 
----
----
 
 
 
