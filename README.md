@@ -38,12 +38,12 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
       
 
 >### 사용법
->1.![저장]([https://github.com/hms0725/Clush_Todo/blob/master/%EC%B6%94%EA%B0%80.gif](https://github.com/hms0725/Clush_Todo/blob/master/%EC%98%81%EC%83%81/%EC%B6%94%EA%B0%80.gif))
+>1.![저장](https://github.com/hms0725/Clush_Todo/blob/master/%EC%98%81%EC%83%81/%EC%B6%94%EA%B0%80.gif)
 >-> text박스에 할 일을 작성 후 구글지도를 클릭해 원하는 장소를 클릭하면 주소 기입란에 자동으로 주소가 기입 됌.(주소기입은 선택사항)
 >
 > 이후 추가하기 버튼을 누르면 할 일이 저장되고 아래 List에 나타남.
 
->2.![주소](https://github.com/hms0725/Clush_Todo/blob/master/%EC%98%81%EC%83%81/%EC%A3%BC%EC%)
+>2.![주소](https://github.com/hms0725/Clush_Todo/blob/master/%EC%98%81%EC%83%81/%EC%A3%BC%EC%86%8C.gif)
 >-> List에서 지도 아이콘을 클릭하면 할 일과 함께 저장된 주소 정보가 팝업창으로 나타남
 >
 >3.![검색](https://github.com/hms0725/Clush_Todo/blob/master/%EC%98%81%EC%83%81/%EA%B2%80%EC%83%89.gif)
