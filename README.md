@@ -85,7 +85,7 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 > ``` localhost:3335 ```
 >
 > 실행된 TodoList 화면을 사용
-> + DB스키마 및 기초데이터 백업파일![todo_db]()
+> + DB스키마 및 기초데이터 백업파일![](https://github.com/hms0725/Clush_Todo/blob/master/todo_db_todo.sql)
 
 >### 라이브러리
 > + 프론트엔드 주력 컴포넌트
