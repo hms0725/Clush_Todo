@@ -120,6 +120,7 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 >### Api 명세
 >
 >(http://localhost:3335/swagger-ui/index.html)
+>!(https://github.com/hms0725/Clush_Todo/blob/master/swagger.png)
 >
 >
 
@@ -137,4 +138,5 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 
 ###### 프로젝트 기여자
 ###### - 홍미숙 hms910725@naver.com
-
+과제전형을 위한 프로젝트였지만 무엇을 해야 할 지 몰라 헤매일 때 길을 찾을 수 있게 되어서 감사한 시간이었다.
+앞으로도 꾸준하게 이런식으로 계속 해보자고!
