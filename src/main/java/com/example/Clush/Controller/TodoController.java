@@ -28,6 +28,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import com.example.Clush.model.Todo;
 import com.example.Clush.service.TodoService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,7 +41,16 @@ public class TodoController {
 	
 	private final TodoService todoService;
 	
+	
 	//할일 조회
+	@Operation(
+			summary = "기존 할 일 목록 조회", 
+			description = "전체 할 일 목록을 조회합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "요청 성공"),
+        @ApiResponse(responseCode = "400", description = "잘못된 요청"),
+        @ApiResponse(responseCode = "500", description = "서버 에러")
+    })
 	@GetMapping(value="/")
 	public String getAllTodos(Model model){
 		System.out.println("Controller getAllTodos start..");
@@ -47,7 +59,15 @@ public class TodoController {
 		return "TodoView";
 	}
 
+	
 	//할일 추가
+	@Operation(
+			summary = "할 일 추가", 
+			description = "새로운 할 일을 추가합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "할 일 추가 성공"),
+        @ApiResponse(responseCode = "400", description = "잘못된 요청")
+    })
 	@PostMapping("/api/addtodo")
 	@ResponseBody
 	public Map<String, Object> addTodo(@RequestBody Todo todo) {
@@ -61,7 +81,15 @@ public class TodoController {
 		return response;
 	}	
 
+	
 	//해당 할일 삭제
+	@Operation(
+			summary = "할 일 삭제", 
+			description = "선택한 특정 할 일을 삭제합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "할 일 삭제 성공"),
+        @ApiResponse(responseCode = "500", description = "서버 에러")
+    })
 	@PostMapping("/api/deletetodo/{id}")
 	public String deleteTodo(@PathVariable("id") Long id, Model model) {
 		System.out.println("controller deleteTodo start..");
@@ -73,7 +101,15 @@ public class TodoController {
 		return "TodoView";
 	}
 	
+	
 	//해당 할일 수정
+	@Operation(
+			summary = "할 일 수정", 
+			description = "특정 할 일의 내용을 수정합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "할 일 수정 성공"),
+        @ApiResponse(responseCode = "500", description = "서버 에러")
+    })
 	@PostMapping("/api/updatetodo/{id}")
 	public String updateTodo(@PathVariable("id") Long id,@RequestParam("task")String task, Model model) {
 		System.out.println("controller updateTodo start..");
@@ -90,7 +126,14 @@ public class TodoController {
 		return "TodoView";
 	}
 	
+	
 	//할일에 대한 지도위치조회
+	@Operation(
+			summary = "할 일의 지도 위치 조회", 
+			description = "특정 할 일에 대한 지도 위치 정보를 조회합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "위치 정보 조회 성공")
+    })
 	@GetMapping("/api/locations/{taskId}")
 	public ResponseEntity<Todo> getTodoMap(@PathVariable String taskId) {
 		Todo location = todoService.getTodoMap(taskId);
@@ -102,7 +145,15 @@ public class TodoController {
 		}
 	}
 	
+	
 	//할 일 완료여부
+	@Operation(
+			summary = "할 일 완료 상태 업데이트", 
+			description = "특정 할 일의 완료 상태를 업데이트합니다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "상태 업데이트 성공"),
+        @ApiResponse(responseCode = "500", description = "서버 에러")
+    })
 	@PostMapping("/api/todoDone/{todoId}")
 	@ResponseBody
 	public ResponseEntity<String> todoDone(
@@ -116,6 +167,7 @@ public class TodoController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("상태 업데이트 실패");
 		}	
 	}
+	
 	
 	// 404 오류 처리
     @ResponseStatus(HttpStatus.NOT_FOUND)

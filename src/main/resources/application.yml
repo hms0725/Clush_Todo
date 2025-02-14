@@ -1,6 +1,12 @@
 server:
   port: 3335
 spring:
+  doc:
+    api-docs:
+      path: /api-docs
+  web:
+    path-mapping:
+      actuator: /actuator
   thymeleaf:
     enabled: false #Thymeleaf 비활성
 # View Resolver
