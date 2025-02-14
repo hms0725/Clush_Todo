@@ -5,7 +5,7 @@ plugins {
 	id 'war'
 }
 
-group = 'com.oracle'
+group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -32,8 +32,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-devtools'
 	
 	//Tomcat 및 Servlet API의존성
-    implementation 'jakarta.servlet:jakarta.servlet-api:5.0.0' 
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.19'
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0' 
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	
 	//Swagger/OpenApi 문서화
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
@@ -43,10 +43,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	
 	//데이터베이스 의존성
-	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
-	annotationProcessor 'org.projectlombok:lombok'
 	
 	//테스트 의존성
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

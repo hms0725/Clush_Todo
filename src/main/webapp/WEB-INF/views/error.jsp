@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<%@ include file="../header.jsp" %>
 <title>Insert title here</title>
 <style type="text/css">
 body {
@@ -107,15 +106,11 @@ error_Page_but_back_a:visited {
 			<div class="error_Page_text1">문제가 있는 페이지 입니다.</div>
 			<div class="error_Page_text2">잠시후에 다시 시도해보세요.</div>
 			<div class="error_Page_but">
-				<a class="error_Page_but_back_a" href="/">홈페이지로 이동</a>
+				<a class="error_Page_but_back_a" href="/TodoView">이전페이지로 이동</a>
 			</div>
 		</div>
-		<div class="error_Page_text3">계속 문제가 일어나 도움이 필요하시면 <a class="error_Page_text3_a" href="/view_jw/csMain">고객지원</a>을 활용해주세요.</div>
+		<div class="error_Page_text3">계속 문제가 일어나 도움이 필요하시면 hms910725@naver.com</a>을 활용해주세요.</div>
 	</div>
 </body>
-<div class="div_kakao"><%@ include file="../kakao.jsp"%></div>
-<footer>
-	
-	<div class="div_footer"><%@ include file="../footer.jsp" %></div>
 </footer>
 </html>

@@ -173,13 +173,13 @@ public class TodoController {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @RequestMapping("/404")
     public String handle404() {
-        return "error";  // 404 오류 페이지
+        return "error"; 
     }
 
     // 500 오류 처리
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @RequestMapping("/500")
     public String handle500() {
-        return "error";  // 500 오류 페이지
+        return "error"; 
     }
 }

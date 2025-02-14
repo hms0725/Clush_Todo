@@ -9,6 +9,7 @@ spring:
       actuator: /actuator
   thymeleaf:
     enabled: false #Thymeleaf 비활성
+
 # View Resolver
   mvc:
     view:
