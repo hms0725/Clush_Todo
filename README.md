@@ -110,7 +110,7 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 
 >### Api 명세
 >
->
+>(http://localhost:3335/swagger-ui/index.html)
 >
 >
 
