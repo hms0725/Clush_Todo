@@ -90,7 +90,8 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 > + DB스키마 및 기초데이터 [백업파일](https://github.com/hms0725/Clush_Todo/blob/master/todo_db_todo.sql)
 >   
 
->## 라이브러리
+>## **
+> ## 라이브러리
 > + 프론트엔드 주력 컴포넌트
 >>  + ### jQuery
 >>    jQuery는 DOM 조작, 이벤트처리, AJAX 요청 등을 간단히 처리할 수 있다. 나는 주로 DOM요소의 선택, 클릭 이벤트처리에 활용하였다.
@@ -118,7 +119,8 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 >>
 >
 
->### Api 명세
+>## **
+>## Api 명세
 >
 >(http://localhost:3335/swagger-ui/index.html)
 >![](https://github.com/hms0725/Clush_Todo/blob/master/swagger.png)
@@ -126,7 +128,8 @@ Clush 과제전형 제출을 위해 만든 앱. Spring Boot와 mysql, **구글 �
 >
 
 
->### 테스트케이스
+>## **
+>## 테스트케이스
 > ![](https://github.com/hms0725/Clush_Todo/blob/master/TestCaseScreen.png)
 
 
