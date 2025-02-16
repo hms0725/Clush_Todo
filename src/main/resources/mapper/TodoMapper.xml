@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.Clush.mapper.TodoMapper">
+    
+    <select id="getAllTodos" resultType="com.example.Clush.model.Todo">
+        SELECT * FROM todo
+    </select>
+    
+    <insert id="addTodo" parameterType="todo" useGeneratedKeys="true" keyProperty="id">
+    	INSERT INTO Todo(task,latitude,longitude,address) 
+    	VALUES(#{task},#{latitude},#{longitude},#{address})
+    </insert>
+    
+    <delete id="deleteTodo" parameterType="todo">
+    	DELETE 
+    	FROM Todo
+    	WHERE id = #{id}
+    </delete>
+    
+    <update id="updateTodo" parameterType="todo">
+    	UPDATE Todo
+    	SET task = #{task}
+    	WHERE id = #{id}
+    </update>
+    
+    <update id="todoDone" parameterType="map">
+    	UPDATE Todo
+    	SET done =#{done}
+    	WHERE id = #{todoId}
+    </update>
+    
+</mapper>

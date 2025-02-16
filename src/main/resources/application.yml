@@ -1,0 +1,38 @@
+server:
+  port: 3335
+spring:
+  doc:
+    api-docs:
+      path: /api-docs
+  web:
+    path-mapping:
+      actuator: /actuator
+  thymeleaf:
+    enabled: false #Thymeleaf 비활성
+
+# View Resolver
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo_db
+    username: todo_user
+    password: clush
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#MyBatis
+mybatis:
+  config-location: classpath:/configuration.xml
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+    
