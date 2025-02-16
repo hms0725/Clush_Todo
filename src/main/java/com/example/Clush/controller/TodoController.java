@@ -1,4 +1,4 @@
-package com.example.Clush.controller;
+package com.example.Clush.Controller;
 
 import java.util.HashMap;
 import java.util.List;
