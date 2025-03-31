@@ -13,7 +13,7 @@ Spring Boot와 mysql, **구글 지도 API**를 활용하여 "위치기반 ToDo L
 >+ 기간동안 과정 일지 기록(https://blog.naver.com/hms0725-)
 
 >## 기술 스택
->+ Java, Spring boot v3, mysql 등
+>+ Java, Spring boot v3, mysql 등..
 >  
 >본 프로젝트는 Spring boot 3.2.3와 MySql 기반으로 작성이 되었다. REST API를 기반 백엔드 서비스를 제공하기 위해 Spring Web과 톰캣 기반에서 구현되었다. 
 
